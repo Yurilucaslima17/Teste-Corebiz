@@ -1,0 +1,14 @@
+.shelf{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    .shelf__title{
+
+    }
+    .shelf__product{
+        .shelf__product-summary-info{
+            min-height: 18px;
+            display: block;
+        }
+    }
+}
