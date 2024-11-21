@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import 'swiper/css/pagination';
 import "./styles.scss";
 // import { Container } from './styles';
 
@@ -12,10 +13,9 @@ const MainBanner: React.FC = () => {
     <section className="main-banner">
       <Swiper
         loop={true}
-        navigation={true}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Pagination, Autoplay]}
       >
         <SwiperSlide>
           <picture className="main-banner__slide">
